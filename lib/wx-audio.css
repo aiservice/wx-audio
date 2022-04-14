@@ -21,14 +21,15 @@
   align-items: center;
   justify-content: center;
   min-height: auto;
-  padding: 8px 12px;
+  padding: 20px 16px 24px;
   border: 1px solid #efefef;
   margin: 0 auto;
   font-size: 0;
   box-sizing: border-box;
   font-family: 'PingFangSC-Regular';
   -webkit-tap-highlight-color: transparent;
-  background: #fdfdfd;
+  background: #f7f7f7;
+  border-radius: 6px;
 }
 .wx-audio-content p {
   margin: 0;
@@ -50,13 +51,13 @@
   width: calc(100% - 42px);
   font-size: 16px;
   box-sizing: border-box;
-  padding-left: 10px;
+  padding-right: 10px;
 }
 .wx-audio-content .wx-audio-right .wx-audio-title {
-  padding-bottom: 6px;
+  padding-bottom: 15px;
   width: 100%;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: bold;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
