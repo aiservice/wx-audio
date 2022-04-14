@@ -4,13 +4,44 @@
 	<meta charset="UTF-8">
 	<title>Wx-audio</title>
 	<meta name="viewport"
-          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		  content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<link href="lib/wx-audio.css" rel="stylesheet">
+	<script type="text/javascript" src="lib/wx-audio.source.js"></script>
 </head>
 <body>
-	<h3 class="title"> es6 wx-audio </h3>
-	<div class="wx-audio"></div>
-	<div id="play" class="btn">播放</div>
-	<div id="pause" class="btn">暂停</div>
-	<div id="cut" class="btn">切歌</div>
+<h3 class="title"> es6 wx-audio </h3>
+<div id="textaudio1"></div>
+<div id="play" class="btn">播放</div>
+<div id="pause" class="btn">暂停</div>
+<div id="cut" class="btn">切歌</div>
+<div id="textaudio2"></div>
+<script type="text/javascript">
+
+	var wxAudio = new WxAudio({
+		ele: '#textaudio1',
+		title: '河山大好',
+		disc: '许嵩',
+		src: 'https://res.wx.qq.com/voice/getvoice?mediaid=MzI1NzM2ODQ1Ml8yMjQ3NDg2NDA2',
+		width: '320px',
+		autoplay: true,
+		loop: false,
+		ended: function () {
+			alert('播放结束')
+		}
+	});
+
+	new WxAudio({
+		ele: '#textaudio2',
+		title: '河山大好2',
+		disc: '许嵩2',
+		src: 'https://res.wx.qq.com/voice/getvoice?mediaid=MzI5MjA5NDE0N18yMjQ3NDkzMTc5',
+		width: '320px',
+		autoplay: true,
+		loop: false,
+		ended: function () {
+			alert('播放结束')
+		}
+	});
+</script>
 </body>
 </html>
