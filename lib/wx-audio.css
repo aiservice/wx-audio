@@ -147,7 +147,7 @@
   left: 0;
   right: 0;
   overflow: hidden;
-  background: #09bb07;
+  background: #222;
   z-index: 2;
 }
 .wx-audio-content .wx-audio-right .wx-audio-progrees .wx-progrees-detail .wx-buffer-p {
@@ -194,7 +194,7 @@
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  background-color: #09bb07;
+  background-color: #222;
   position: absolute;
   left: 0;
   top: 50%;
@@ -209,7 +209,7 @@
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  background-image: radial-gradient(rgba(9, 187, 7, 0.3) 20%, transparent 40%);
+  background-image: radial-gradient(rgba(113, 113, 108, 0.3) 20%, transparent 40%);
   top: 50%;
   margin-top: -12px;
   margin-left: -9px;
